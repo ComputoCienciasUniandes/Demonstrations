@@ -1,11 +1,7 @@
 ### Barnes - Hut implementation
 
 To install:
-	* `python setup.py install`
 
-Examples of use:
-	* On examples, `python example.py`
+	`python setup.py install`
 
-From github.com/jsbarbosa/astrohut
-
-
+From [astrohut](https://github.com/jsbarbosa/astrohut)
