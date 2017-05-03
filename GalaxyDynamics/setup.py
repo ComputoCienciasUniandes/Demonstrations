@@ -1,6 +1,11 @@
-from distutils.core import setup
-from distutils.extension import Extension
+from distutils.core import setup, Extension
 
-setup(
-    ext_modules = [Extension("core", ["core.c"])]
-)
+module1 = Extension('astrohut/bruteforce',
+                    sources = ['astrohut/bruteforce.c', 'astrohut/box.c', 'astrohut/init.c'], include_dirs=['astrohut'], extra_compile_args=["-fopenmp"],
+                     extra_link_args=["-fopenmp"])
+
+setup (name = 'AstroHut',
+       version = '1.0',
+       description = 'Bruteforce attemp',
+       packages = ['astrohut'],
+       ext_modules = [module1])
